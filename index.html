@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <img src="./images/bg-desktop-dark.jpg" alt="dark" id="background">
+    <div class="min-container">
+      <div class="heading">
+        <h1>TODO</h1>
+        <img src="./images/icon-sun.svg" alt="" id="sun">
+      </div>
+      <div class="create">
+        <input type="text" id="createNew" placeholder="Create a new todo...">
+      </div>
+      <div class="list">
+        <div class="todos">
+          <div class="no-todos-message">Hurray! You have completed the tasks</div>
+        </div>
+        <div class="foot">
+          <h4 class="items-left filter-btn dim side">0 items left</h4>
+          <div class="buttons">
+            <p class="filter-btn active" data-filter="all">All</p>
+            <p class="filter-btn" data-filter="active">Active</p>
+            <p class="filter-btn dim" data-filter="completed">Completed</p>
+          </div>
+          <p class="clear-completed filter-btn side">Clear Completed</p>
+        </div>
+      </div>
+      <div class="create fot">
+        <div class="buttons" id="sm">
+          <p class="filter-btn active" data-filter="all">All</p>
+          <p class="filter-btn" data-filter="active">Active</p>
+          <p class="filter-btn dim" data-filter="completed">Completed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
